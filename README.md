@@ -20,6 +20,34 @@ Once an **Employee** signs in, they have the ability to:
     - Will notify if request has been approved, denied, or is pending
     - Will notify if additional information is requested from a Direct Supervisor, Department Head, or Benefits Coordinator.
 
+
 Once a **Direct Supervisor** signs in, they have the ability to:
   - Approve/ deny employee's reimbursement request
-  - Can request 
+    - If denied, Direct Supervisor must provide a reason. 
+  - Request additional information from employee before approval
+If **Department Supervisor** is also a **Department Head**, then Department Head approval is skipped.
+If this task is not complete within 5 days of receival, then request is auto-approved. 
+
+
+Once a **Department Head** signs in, they have the ability to:
+  - Approve/ deny employee's reimbursement request
+    - If denied, Direct Supervisor must provide a reason. 
+  - Request additional information from employee before approval
+If this task is not complete within 5 days of receival, then request is auto-approved. 
+
+
+Once a **Benefits Coordinator (BenCo)** signs in, they have the ability to:
+  - Approve/ deny employee's reimbursement request
+    - If denied, Direct Supervisor must provide a reason. 
+  - Request additional information from 
+    - Employee before approval
+    - Direct Supervisor before approval
+    - Department Head before approval
+  - Alter the reimbursement ammount
+    - If larger than $1000, **BenCo** must provide a reason for this 
+
+This approval is not skippable.  
+Employee will receive a notification if **BenCo** changes award amount. 
+  - In this case, employee has option to cancel their request
+
+If not approved wihtin 5 days of receival, escalation email should be sent to **BenCo's _Direct Supervsior_**. 
