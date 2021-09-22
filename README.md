@@ -33,7 +33,7 @@ If this task is not complete within 5 days of receival, then request is auto-app
 
 ### Once a **Department Head** signs in, they have the ability to:
   - Approve/ deny employee's reimbursement request
-    - If denied, Direct Supervisor must provide a reason. 
+    - If denied, Department Head must provide a reason. 
   - Request additional information from employee before approval
 
 If this task is not complete within 5 days of receival, then request is auto-approved. 
