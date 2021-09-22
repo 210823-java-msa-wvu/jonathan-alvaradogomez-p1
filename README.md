@@ -41,7 +41,7 @@ If this task is not complete within 5 days of receival, then request is auto-app
 
 ### Once a **Benefits Coordinator (BenCo)** signs in, they have the ability to:
   - Approve/ deny employee's reimbursement request
-    - If denied, Direct Supervisor must provide a reason. 
+    - If denied, BenCo must provide a reason. 
   - Request additional information from 
     - Employee before approval
     - Direct Supervisor before approval
