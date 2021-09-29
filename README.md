@@ -14,7 +14,7 @@ There are 4 different kinds of users for this website:
 Each user has the ability to sign into the website, and once logged in, the website will keep track of what kind of user they are. Employees will have the ability to create a new account if they do not already have one. However, Direct Supervisors, Department Heads, and Benefits Coordinators will already have existing accounts and cannot have new ones created. 
 
 ### Once an **Employee** signs in, they have the ability to:
-  - Fill out a tuition reimbursement form (at least one week before event), with overall limit set to $1000 
+  - Fill out a tuition reimbursement form (at least one week before event), with overall limit set to $1000 per year
   - Submit their final grade or presentation after course completion (passing grade needed for reimbursement)
   - Check a notifications tab
     - Will notify if request has been approved, denied, or is pending
