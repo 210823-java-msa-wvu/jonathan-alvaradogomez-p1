@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance and Changes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            
+        }
+
+        table{
+            border: 1px solid black;
+            width: 50%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Tiramisu</h1>
+        <h3>View Balances and Change Amounts</h3>
+        <p>
+            Use this page to view employees' current balances, as well as to change 
+            any of those amounts. 
+        </p>
+        <a href="benco.html">Return to Coordinator Page</a>
+    </div>
+
+    <br></br>
+
+    <div>
+        <hr>
+        <h3>Balances</h3>
+        <button id="checkBalance">View All Balances</button>
+        <br></br>
+        <section id="balanceSection"></section>
+    </div>
+
+    <br></br>
+
+    <div>
+        <hr>
+        <h3>Change Amounts</h3>
+        <button id="checkAmounts">View / Change Request Amounts</button>
+        <br></br>
+        <section id="amountSection"></section>
+    </div>
+
+    <script src="javascript/moneyMatters.js"></script>
+    
+</body>
+
+</html>

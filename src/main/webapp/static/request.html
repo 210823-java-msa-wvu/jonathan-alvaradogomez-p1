@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            
+        }
+
+        table{
+            border: 1px solid black;
+            width: 70%;
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Tiramisu</h1>
+    <h2>Reimbursement Request Form</h2>
+    <h4>Please fill out the information below and do not leave any boxes blank.</h4>
+    <a href="employee.html">Return to Employee Page</a>
+    <br></br>
+
+    <div>
+        <p>
+            Note: The reimbursement amount that you request may not be the full amount you ultimately receive.
+        </p>
+        <table>
+            <tr>
+                <th>Coverage</th>
+                <th>Event Type</th>
+            </tr>
+            <tr>
+                <td>100%</td>
+                <td>Certification</td>
+            </tr>
+            <tr>
+                <td>90%</td>
+                <td>Technical Training</td>
+            </tr>
+            <tr>
+                <td>80%</td>
+                <td>University Course</td>
+            </tr>
+            <tr>
+                <td>75%</td>
+                <td>Certification Prep Class</td>
+            </tr>
+            <tr>
+                <td>60%</td>
+                <td>Seminars</td>
+            </tr>
+            <tr>
+                <td>30%</td>
+                <td>Other</td>
+            </tr>
+        </table>
+        
+        <hr>
+
+    </div>
+
+    <br></br>
+
+    <div>
+        <form action="requests" method="POST">
+            <label for="today_date">Today's Date: 
+                <input type="date" name="today_date" id="today_date">
+            </label>
+
+            <br></br>
+
+            <label for="time">Current Time:
+                <input type="time" name="time" id="time">
+            </label>
+
+            <br></br>
+
+            <label for="event_date">Event Start Date: 
+                <input type="date" name="event_date" id="event_date">
+            </label>
+
+            <br></br>
+
+            <label for="city">City where Event takes place:
+                <input type="text" name="city" id="city">
+            </label>
+
+            <br></br>
+
+            <label for="state">State where Event takes place:
+                <input type="text" name="state" id="state">
+            </label>
+
+            <br></br>
+
+            <label for="description">Event Description:
+                <input type="textarea" name="description" id="description">
+            </label>
+
+            <br></br>
+
+            <label for="cost">Event Cost:  $
+                <input type="number" name="cost" id="cost" min="0" step="0.01">
+            </label>
+
+            <br></br>
+
+            <label for="grading_format">Select a Grading Format: </label>
+            <select name="grading_format" id="grading_format">
+                <option value="letter">Letter Grade</option>
+                <option value="percentage">Percentage</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br></br>
+
+            <label for="event_type">Event Type:</label>
+            <select name="event_type" id="event_type">
+                <option value="certification">Certification</option>
+                <option value="technical">Technical Training</option>
+                <option value="uni_course">University Course</option>
+                <option value="certification_prep">Certification Prep Class</option>
+                <option value="seminar">Seminar</option>
+                <option value="other">Other</option>
+            </select>
+
+
+            <br></br>
+
+            <label for="justification">
+                Reason for Reimbursement Request:
+                
+                <!-- <input type="text" name="justification" id="justification"> -->
+            </label>
+            <br></br>
+            <textarea name="justification" id="justification" cols="50" rows="10"></textarea>
+            
+            <br></br>
+
+            <!-- have a button for now, but change it to submit when backend/java is 
+            ready to receive information -->
+
+            <input type="submit" id="submit_request" value="Submit">
+            <!-- <button id="submit_request" type="button">Submit</button> -->
+
+        </form>
+    </div>
+
+    <script src="javascript/request.js"></script>
+</body>
+
+</html>

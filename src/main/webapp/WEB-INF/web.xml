@@ -1,0 +1,262 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+<!--  <filter>-->
+<!--    <filter-name>CorsFilter</filter-name>-->
+<!--    <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>-->
+<!--    <init-param>-->
+<!--      <param-name>cors.allowed.origins</param-name>-->
+<!--      &lt;!&ndash;if accessing from local file => * | if accessing from hosted server (Angular) => http://localhost:4200 (and un-comment support credentials)&ndash;&gt;-->
+<!--      <param-value>*</param-value>-->
+<!--    </init-param>-->
+<!--    <init-param>-->
+<!--      <param-name>cors.allowed.methods</param-name>-->
+<!--      <param-value>GET,POST,HEAD,OPTIONS,PUT</param-value>-->
+<!--    </init-param>-->
+<!--    <init-param>-->
+<!--      <param-name>cors.allowed.headers</param-name>-->
+<!--      <param-value>Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers</param-value>-->
+<!--    </init-param>-->
+<!--    <init-param>-->
+<!--      <param-name>cors.exposed.headers</param-name>-->
+<!--      <param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value>-->
+<!--    </init-param>-->
+<!--    &lt;!&ndash; Comment this out if trying to access from local file&ndash;&gt;-->
+<!--    &lt;!&ndash;        <init-param>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <param-name>cors.support.credentials</param-name>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <param-value>true</param-value>&ndash;&gt;-->
+<!--    &lt;!&ndash;        </init-param>&ndash;&gt;-->
+<!--    <init-param>-->
+<!--      <param-name>cors.preflight.maxage</param-name>-->
+<!--      <param-value>10</param-value>-->
+<!--    </init-param>-->
+<!--  </filter>-->
+
+<!--  <filter-mapping>-->
+<!--    <filter-name>CorsFilter</filter-name>-->
+<!--    <url-pattern>*</url-pattern>-->
+<!--  </filter-mapping>-->
+
+<!--  <servlet>-->
+<!--    <servlet-name>FrontControllerServlet</servlet-name>-->
+<!--    <servlet-class>com.alvarado.servlets.FrontControllerServlet</servlet-class>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>FrontControllerServlet</servlet-name>-->
+<!--    <url-pattern>/*</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+
+                                      <!-- SERVLETS -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.RequestServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.EmployeeServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>FinalGradeServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.FinalGradeServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>EmployeeAddInfoServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.EmployeeAddInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>BalanceStatusServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.BalanceStatusServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SuperServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.SuperServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SViewRequests</servlet-name>
+    <servlet-class>com.alvarado.servlets.SViewRequests</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SuperAddInfoServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.SuperAddInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SuperAppDenServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.SuperAppDenServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>HeadServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.HeadServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>HeadViewRequests</servlet-name>
+    <servlet-class>com.alvarado.servlets.HeadViewRequests</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>HeadAddInfoServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.HeadAddInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>HeadAppDenServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.HeadAppDenServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>BencoServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.BencoServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>BencoViewRequestsServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.BencoViewRequestsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>BencoAddInfoServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.BencoAddInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>BencoAppDenServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.BencoAppDenServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MoneyMattersServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.MoneyMattersServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DeleteRequestServlet</servlet-name>
+    <servlet-class>com.alvarado.servlets.DeleteRequestServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+                                      <!-- SERVLET MAPPING -->
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/static/requests</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
+    <url-pattern>/static/employee</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>FinalGradeServlet</servlet-name>
+    <url-pattern>/static/uploadFinal</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>EmployeeAddInfoServlet</servlet-name>
+    <url-pattern>/static/employeeAddInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>BalanceStatusServlet</servlet-name>
+    <url-pattern>/static/balanceStatus</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SuperServlet</servlet-name>
+    <url-pattern>/static/super</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SViewRequests</servlet-name>
+    <url-pattern>/static/sViewRequests</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SuperAddInfoServlet</servlet-name>
+    <url-pattern>/static/superAddInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SuperAppDenServlet</servlet-name>
+    <url-pattern>/static/superAppDen</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HeadServlet</servlet-name>
+    <url-pattern>/static/head</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HeadViewRequests</servlet-name>
+    <url-pattern>/static/headViewRequests</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HeadAddInfoServlet</servlet-name>
+    <url-pattern>/static/headAddInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HeadAppDenServlet</servlet-name>
+    <url-pattern>/static/headAppDen</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>BencoServlet</servlet-name>
+    <url-pattern>/static/benco</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>BencoViewRequestsServlet</servlet-name>
+    <url-pattern>/static/bencoViewRequests</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>BencoAddInfoServlet</servlet-name>
+    <url-pattern>/static/bencoAddInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>BencoAppDenServlet</servlet-name>
+    <url-pattern>/static/bencoAppDen</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MoneyMattersServlet</servlet-name>
+    <url-pattern>/static/moneyMatters</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DeleteRequestServlet</servlet-name>
+    <url-pattern>/static/deleteRequest</url-pattern>
+  </servlet-mapping>
+
+</web-app>
